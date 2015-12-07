@@ -1,6 +1,18 @@
+<% if @name %>
+<h1>My name is <%= @name %> <%= @last_name %></h1>
+<% end %>
 
-<h1>My name is <%= @name_gen %>
-</h1>
+<form action="/named-cat">
+  <div>
+    <label for="name">Kitten's Name:</label>
+    <input type="text" name="firstname" >
+  </div>
+  <div>
+    <label for="name">Kitten's Surname:</label>
+    <input type="text" name="surname" >
+    <input type="submit" value="Submit" >
+  </div>
+</form>
 
 <div style='border: 20px inset purple'>
   <img src='http://bit.ly/1eze8aE'>
