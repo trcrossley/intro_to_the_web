@@ -13,7 +13,5 @@ get '/guac' do
 end
 
 get '/cat' do
-  "<div style='border: 20px inset purple'>
-    <img src='http://bit.ly/1eze8aE'>
-   </div>"
+  erb(:index)
 end
