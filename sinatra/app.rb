@@ -13,5 +13,6 @@ get '/guac' do
 end
 
 get '/cat' do
+  @name_gen = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
